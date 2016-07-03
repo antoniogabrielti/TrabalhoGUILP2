@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.web.*?>
@@ -52,5 +53,20 @@
             </LinearGradient>
          </fill>
       </Text>
+      <ImageView fitHeight="97.0" fitWidth="302.0" layoutX="142.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/juliano/Desktop/TrabalhoGUILP2/Cinema/pictures/Benvindo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/juliano/Desktop/TrabalhoGUILP2/Cinema/pictures/Cinema.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="416.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/juliano/Desktop/TrabalhoGUILP2/Cinema/pictures/Cinema.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

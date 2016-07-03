@@ -74,7 +74,7 @@ FilmeNegocio FN = new FilmeNegocio();
             LabelFilmeCod.setText(String.valueOf(filmeSelecionado.getCodigo()));
             this.LabelFilmeNome.setText(filmeSelecionado.getNome());
             this.LabelFilmeGenero.setText(filmeSelecionado.getGenero());
-            //FilmeParaExclusao(filmeSelecionado);
+           
         }else{
             LabelFilmeCod.setText("");
             this.LabelFilmeNome.setText("");

@@ -43,7 +43,14 @@ public class FilmeUIController implements Initializable {
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        Stage stage = new Stage();
+        Parent root=null;
+        try {
+            root = FXMLLoader.load(Cinema.class.getResource("/view/AnchorPaneBackgroundFilme.fxml"));
+        } catch (IOException ex) {
+            Logger.getLogger(FilmeUIController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        AnchorPaneFilme.getChildren().setAll(root);
     }    
         @FXML
     public void HandleBtnVoltar(ActionEvent event) throws IOException{
@@ -73,6 +80,11 @@ public class FilmeUIController implements Initializable {
     public void HandleMenuItemCadastrar(ActionEvent event) throws IOException{
         Stage stage = new Stage();
         Parent root = FXMLLoader.load(Cinema.class.getResource("/view/AnchorPaneCadastrarFilme.fxml"));
+        AnchorPaneFilme.getChildren().setAll(root);
+    }
+    public void HandleMenuItemAtualizar(ActionEvent event) throws IOException{
+        Stage stage = new Stage();
+        Parent root = FXMLLoader.load(Cinema.class.getResource("/view/AnchorPaneAtualizarFilme.fxml"));
         AnchorPaneFilme.getChildren().setAll(root);
     }
 }
