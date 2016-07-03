@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.input.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controle.FilmeUIController">
+   <children>
+      <ToolBar prefHeight="40.0" prefWidth="200.0">
+        <items>
+          <Button fx:id="MenuItemCadastroFilme" depthTest="DISABLE" focusTraversable="false" mnemonicParsing="false" onAction="#HandleMenuItemCadastrar" text="Cadastrar" textAlignment="CENTER" />
+            <Button fx:id="MenuItemListaFilme" focusTraversable="false" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#HandleMenuItemVisualizar" text="Visualizar" />
+            <Button fx:id="MenuItemDeletaFilme" focusTraversable="false" layoutX="81.0" layoutY="10.0" mnemonicParsing="false" onAction="#HandleMenuItemDeletar" text="Deletar" />
+            <Button fx:id="MenuItemAtualizaFilme" focusTraversable="false" layoutX="254.0" layoutY="10.0" mnemonicParsing="false" text="Atualizar" />
+            <MenuButton focusTraversable="false" mnemonicParsing="false" text="Buscar Filme">
+              <items>
+                <MenuItem fx:id="MenuItemBuscaFilmeNome" mnemonicParsing="false" text="Por Nome" />
+                <MenuItem fx:id="MenuItemBuscaFilmeCod" mnemonicParsing="false" text="Por Código" />
+              </items>
+            </MenuButton>
+        </items>
+      </ToolBar>
+      <AnchorPane fx:id="AnchorPaneFilme" prefHeight="329.0" prefWidth="600.0" />
+      <Pane prefHeight="48.0" prefWidth="600.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#233a51" height="48.0" layoutX="-14.0" stroke="TRANSPARENT" strokeType="INSIDE" width="647.0" />
+            <Text layoutX="202.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Painel de Filmes" wrappingWidth="196.0400390625">
+               <font>
+                  <Font name="Book Antiqua" size="27.0" />
+               </font>
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#e41616" />
+                        <Stop color="#ab3737" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Text>
+            <Button fx:id="BtnVoltarPrincipal" focusTraversable="false" layoutX="64.0" layoutY="9.0" mnemonicParsing="false" onAction="#HandleBtnVoltar" text="Voltar" />
+         </children>
+      </Pane>
+   </children>
+</VBox>

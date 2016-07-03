@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Cinema.jnlp">
+  <information>
+    <title>Cinema</title>
+    <vendor>juliano</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Cinema.jar" size="72423" download="eager" />
+    <jar href="lib\postgresql-9.2-1002.jdbc4.jar" size="576248" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Cinema" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="cinema.Cinema"  name="Cinema" />
+  <update check="always"/>
+</jnlp>

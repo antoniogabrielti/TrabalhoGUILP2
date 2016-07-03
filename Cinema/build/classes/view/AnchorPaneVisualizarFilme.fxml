@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPaneVisualizar" prefHeight="323.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controle.AnchorPaneVisualizarFilmeController">
+   <children>
+      <TableView fx:id="tableViewFilme" layoutX="173.0" layoutY="46.0" prefHeight="329.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="tableColumnCodFilme" prefWidth="55.0" text="Código" />
+          <TableColumn fx:id="tableColumnNomeFilme" prefWidth="224.0" text="Nome do Filme" />
+            <TableColumn fx:id="tableColumnGeneroFilme" prefWidth="78.0" text="Genero" />
+            <TableColumn fx:id="tableColumnSinopseFilme" prefWidth="242.0" text="Sinopse" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
