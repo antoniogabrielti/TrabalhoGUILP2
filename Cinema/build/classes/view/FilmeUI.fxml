@@ -20,7 +20,7 @@
             <Button fx:id="MenuItemAtualizaFilme" focusTraversable="false" layoutX="254.0" layoutY="10.0" mnemonicParsing="false" onAction="#HandleMenuItemAtualizar" text="Atualizar" />
             <MenuButton focusTraversable="false" mnemonicParsing="false" text="Buscar Filme">
               <items>
-                <MenuItem fx:id="MenuItemBuscaFilmeNome" mnemonicParsing="false" text="Por Nome" />
+                <MenuItem fx:id="MenuItemBuscaFilmeNome" mnemonicParsing="false" onAction="#HandleMenuItemBuscaPorNome"  text="Por Nome" />
                 <MenuItem fx:id="MenuItemBuscaFilmeCod" mnemonicParsing="false" text="Por Código" />
               </items>
             </MenuButton>

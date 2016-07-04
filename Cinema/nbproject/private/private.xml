@@ -3,12 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/juliano/Desktop/Cinema/src/Controle/AnchorPaneCadastrarFilmeController.java</file>
-            <file>file:/C:/Users/juliano/Desktop/Cinema/src/dominio/Filme.java</file>
-            <file>file:/C:/Users/juliano/Desktop/Cinema/src/Controle/FilmeUIController.java</file>
-            <file>file:/C:/Users/juliano/Desktop/Cinema/src/negocio/FilmeNegocio.java</file>
-            <file>file:/C:/Users/juliano/Desktop/Cinema/src/Controle/AnchorPaneDeletarFilmeController.java</file>
-            <file>file:/C:/Users/juliano/Desktop/Cinema/src/viewUI/FilmeUI.java</file>
+            <file>file:/C:/Users/juliano/Desktop/TrabalhoGUILP2/Cinema/src/Controle/AnchorPaneBuscaNomeController.java</file>
+            <file>file:/C:/Users/juliano/Desktop/TrabalhoGUILP2/Cinema/src/Controle/AlertDeleteFilmeController.java</file>
+            <file>file:/C:/Users/juliano/Desktop/TrabalhoGUILP2/Cinema/src/Controle/AnchorPaneAtualizarFilmeController.java</file>
         </group>
     </open-files>
 </project-private>

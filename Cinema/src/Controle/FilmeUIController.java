@@ -87,4 +87,9 @@ public class FilmeUIController implements Initializable {
         Parent root = FXMLLoader.load(Cinema.class.getResource("/view/AnchorPaneAtualizarFilme.fxml"));
         AnchorPaneFilme.getChildren().setAll(root);
     }
+    public void HandleMenuItemBuscaPorNome(ActionEvent event) throws IOException{
+        Stage stage = new Stage();
+        Parent root = FXMLLoader.load(Cinema.class.getResource("/view/AnchorPaneBuscaNome.fxml"));
+        AnchorPaneFilme.getChildren().setAll(root);
+    }
 }

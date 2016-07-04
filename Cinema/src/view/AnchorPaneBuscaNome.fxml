@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="323.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controle.AnchorPaneBuscaNomeController">
+   <children>
+      <SplitPane dividerPositions="0.1277258566978193" layoutX="168.0" layoutY="74.0" orientation="VERTICAL" prefHeight="323.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Button fx:id="btnPesquisar" layoutX="495.0" layoutY="7.0" mnemonicParsing="false" onAction="#HandlebtnPesquisar"  text="Pesquisar" />
+                  <Label layoutX="3.0" layoutY="11.0" prefHeight="17.0" prefWidth="211.0" text=" Informe o nome do Filme para Busca: " />
+                  <TextField fx:id="textFieldBuscaNome" layoutX="214.0" layoutY="7.0" prefHeight="25.0" prefWidth="273.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TableView fx:id="tableViewFilme" layoutX="121.0" layoutY="47.0" prefHeight="277.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="tableColumnCodigoFilme" prefWidth="52.0" text="Código" />
+                      <TableColumn fx:id="tableColumnNomeFilme" prefWidth="237.0" text="Nome do Filme" />
+                        <TableColumn fx:id="tableColumnGeneroFilme" text="Genero" />
+                        <TableColumn fx:id="tableColumnSinopseFilme" prefWidth="228.0" text="Sinopse" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
