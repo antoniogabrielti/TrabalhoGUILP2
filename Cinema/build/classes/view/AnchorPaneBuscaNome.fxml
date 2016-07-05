@@ -15,7 +15,7 @@
                   <Button fx:id="btnPesquisar" layoutX="509.0" layoutY="37.0" mnemonicParsing="false" onAction="#HandlebtnPesquisar" text="Pesquisar" />
                   <Label layoutX="3.0" layoutY="11.0" prefHeight="17.0" prefWidth="266.0" text=" Informe o nome ou código do Filme para Busca: " />
                   <TextField fx:id="textFieldBuscaNome" layoutX="269.0" layoutY="7.0" onKeyPressed="#handleKeyEnter" prefHeight="25.0" prefWidth="273.0" />
-                  <ToggleButton fx:id="toggleBtnNomeFilme" layoutX="70.0" layoutY="37.0" mnemonicParsing="false" onAction="#HandlebtnToggleButtonNome" text="Buscar por Nome" />
+                  <ToggleButton fx:id="toggleBtnNomeFilme" layoutX="70.0" layoutY="37.0" mnemonicParsing="false" onAction="#HandlebtnToggleButtonNome" text="Buscar Por Nome" />
                   <ToggleButton fx:id="toggleBtnCodigoFilme" layoutX="212.0" layoutY="37.0" mnemonicParsing="false" onAction="#HandlebtnToggleButton" text="Buscar Por Código" />
                </children>
             </AnchorPane>

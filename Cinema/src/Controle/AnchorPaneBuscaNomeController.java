@@ -131,11 +131,11 @@ FilmeNegocio FN = new FilmeNegocio();
     }
     @FXML
         public void HandlebtnPesquisar(ActionEvent event) throws IOException{
-            if(toggleBtnNomeFilme.isSelected() && toggleBtnCodigoFilme.isSelected()){
+            if(!toggleBtnNomeFilme.isSelected() && !toggleBtnCodigoFilme.isSelected()){
                 Alert alert = new Alert(Alert.AlertType.WARNING);
                 alert.setTitle("Falha de Busca");
                 alert.setHeaderText("");
-                alert.setContentText("Você só pode selecionar 1 opção de busca, selecione por nome ou por código. Tente Novamente!!!");
+                alert.setContentText("Você tem que  selecionar 1 opção para a busca, selecione por nome ou por código. Tente Novamente!!!");
                 alert.showAndWait();
             }else{
                 if(!textFieldBuscaNome.getText().isEmpty()){
@@ -157,8 +157,8 @@ FilmeNegocio FN = new FilmeNegocio();
                 }else{
                     this.tableViewFilme.setItems(null);
                     Alert alert = new Alert(Alert.AlertType.ERROR);
-                    alert.setHeaderText("Falha na Busca por Nome");
-                    alert.setContentText("Você precisa informar um nome para busca!!!");
+                    alert.setHeaderText("Falha na Busca");
+                    alert.setContentText("Você precisa informar um nome ou um código para busca!!!");
                     alert.show(); 
                 }
               }
