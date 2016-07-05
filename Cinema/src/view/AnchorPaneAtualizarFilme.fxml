@@ -7,8 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="323.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controle.AnchorPaneAtualizarFilmeController">
+<AnchorPane id="AnchorPane" prefHeight="323.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controle.AnchorPaneAtualizarFilmeController">
    <children>
       <SplitPane dividerPositions="0.6105919003115264" layoutX="140.0" layoutY="55.0" orientation="VERTICAL" prefHeight="323.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
@@ -26,9 +25,9 @@
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                <children>
-                  <TextField fx:id="textFieldNomeFilme" layoutX="151.0" layoutY="14.0" prefHeight="25.0" prefWidth="254.0" />
-                  <TextField fx:id="textFieldGeneroFilme" layoutX="151.0" layoutY="49.0" prefHeight="25.0" prefWidth="254.0" />
-                  <TextField fx:id="textFieldSinopseFilme" layoutX="151.0" layoutY="83.0" prefHeight="25.0" prefWidth="254.0" />
+                  <TextField fx:id="textFieldNomeFilme" layoutX="151.0" layoutY="14.0" onKeyPressed="#handleKeyEnter" prefHeight="25.0" prefWidth="254.0" />
+                  <TextField fx:id="textFieldGeneroFilme" layoutX="151.0" layoutY="49.0" onKeyPressed="#handleKeyEnter" prefHeight="25.0" prefWidth="254.0" />
+                  <TextField fx:id="textFieldSinopseFilme" layoutX="151.0" layoutY="83.0" onKeyPressed="#handleKeyEnter" prefHeight="25.0" prefWidth="254.0" />
                   <Label layoutX="33.0" layoutY="18.0" text="Nome do Filme: ">
                      <font>
                         <Font name="System Bold" size="12.0" />

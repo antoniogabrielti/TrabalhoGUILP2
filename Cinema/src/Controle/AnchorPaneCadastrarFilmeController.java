@@ -15,6 +15,8 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import negocio.FilmeNegocio;
 import negocio.NegocioException;
 
@@ -49,6 +51,9 @@ public class AnchorPaneCadastrarFilmeController implements Initializable {
                 alert.setHeaderText("CONFIRMAÇÃO");
                 alert.setContentText("O filme "+textFieldNomeFilme.getText() +" foi cadastrado com sucesso na base de dados!!!");
                 alert.showAndWait();
+                this.textFieldNomeFilme.setText("");
+                this.textFieldGeneroFilme.setText("");
+                this.textFieldSinopseFilme.setText("");
             } catch (NegocioException ex) {
                 Alert alert = new Alert(Alert.AlertType.ERROR);
                 alert.setContentText(ex.getMessage());
@@ -78,4 +83,11 @@ public class AnchorPaneCadastrarFilmeController implements Initializable {
         }
         return false;
     }
+        @FXML
+        public void handleKeyEnter(KeyEvent ke) throws IOException, NegocioException{
+            if (ke.getCode().equals(KeyCode.ENTER)){
+                ActionEvent event = new ActionEvent();
+                this.HandleBtnCadastrarFilme(event);
+            }
+        }
 }

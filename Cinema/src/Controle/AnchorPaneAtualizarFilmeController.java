@@ -20,6 +20,8 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import negocio.FilmeNegocio;
 import negocio.NegocioException;
 
@@ -129,5 +131,13 @@ FilmeNegocio FN = new FilmeNegocio();
             alert.show();
         }
     }
+        
+        @FXML
+        public void handleKeyEnter(KeyEvent ke) throws IOException{
+            if (ke.getCode().equals(KeyCode.ENTER)){
+                ActionEvent event = new ActionEvent();
+                this.HandleBtnAtualizarFilme(event);
+            }
+        }
     
 }

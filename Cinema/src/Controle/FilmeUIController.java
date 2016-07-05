@@ -16,6 +16,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuItem;
+import javafx.scene.control.ToggleButton;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -88,8 +89,35 @@ public class FilmeUIController implements Initializable {
         AnchorPaneFilme.getChildren().setAll(root);
     }
     public void HandleMenuItemBuscaPorNome(ActionEvent event) throws IOException{
-        Stage stage = new Stage();
-        Parent root = FXMLLoader.load(Cinema.class.getResource("/view/AnchorPaneBuscaNome.fxml"));
-        AnchorPaneFilme.getChildren().setAll(root);
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(AnchorPaneBuscaNomeController.class.getResource("/view/AnchorPaneBuscaNome.fxml"));
+        Parent page = (Parent) loader.load();
+
+        // Criando um Estágio de Diálogo (Stage Dialog)
+        Stage dialogStage = new Stage();
+        dialogStage.setTitle("Excluir Filme");
+        Scene scene = new Scene(page);
+        dialogStage.setScene(scene);
+
+        // Setando o cliente no Controller.
+        AnchorPaneBuscaNomeController controller = loader.getController();
+        controller.setToggleBtnNomeFilme();
+        AnchorPaneFilme.getChildren().setAll(page);
+    }
+        public void HandleMenuItemBuscaPorCodigo(ActionEvent event) throws IOException{
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(AnchorPaneBuscaNomeController.class.getResource("/view/AnchorPaneBuscaNome.fxml"));
+        Parent page = (Parent) loader.load();
+
+        // Criando um Estágio de Diálogo (Stage Dialog)
+        Stage dialogStage = new Stage();
+        dialogStage.setTitle("Excluir Filme");
+        Scene scene = new Scene(page);
+        dialogStage.setScene(scene);
+
+        // Setando o cliente no Controller.
+        AnchorPaneBuscaNomeController controller = loader.getController();
+        controller.setToggleBtnCodigoFilme();
+        AnchorPaneFilme.getChildren().setAll(page);
     }
 }

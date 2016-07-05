@@ -6,16 +6,17 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="323.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controle.AnchorPaneBuscaNomeController">
+<AnchorPane id="AnchorPane" prefHeight="323.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controle.AnchorPaneBuscaNomeController">
    <children>
-      <SplitPane dividerPositions="0.1277258566978193" layoutX="168.0" layoutY="74.0" orientation="VERTICAL" prefHeight="323.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <SplitPane dividerPositions="0.2398753894080997" layoutX="168.0" layoutY="74.0" orientation="VERTICAL" prefHeight="323.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                <children>
-                  <Button fx:id="btnPesquisar" layoutX="495.0" layoutY="7.0" mnemonicParsing="false" onAction="#HandlebtnPesquisar"  text="Pesquisar" />
-                  <Label layoutX="3.0" layoutY="11.0" prefHeight="17.0" prefWidth="211.0" text=" Informe o nome do Filme para Busca: " />
-                  <TextField fx:id="textFieldBuscaNome" layoutX="214.0" layoutY="7.0" prefHeight="25.0" prefWidth="273.0" />
+                  <Button fx:id="btnPesquisar" layoutX="509.0" layoutY="37.0" mnemonicParsing="false" onAction="#HandlebtnPesquisar" text="Pesquisar" />
+                  <Label layoutX="3.0" layoutY="11.0" prefHeight="17.0" prefWidth="266.0" text=" Informe o nome ou código do Filme para Busca: " />
+                  <TextField fx:id="textFieldBuscaNome" layoutX="269.0" layoutY="7.0" onKeyPressed="#handleKeyEnter" prefHeight="25.0" prefWidth="273.0" />
+                  <ToggleButton fx:id="toggleBtnNomeFilme" layoutX="70.0" layoutY="37.0" mnemonicParsing="false" onAction="#HandlebtnToggleButtonNome" text="Buscar por Nome" />
+                  <ToggleButton fx:id="toggleBtnCodigoFilme" layoutX="212.0" layoutY="37.0" mnemonicParsing="false" onAction="#HandlebtnToggleButton" text="Buscar Por Código" />
                </children>
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
