@@ -49,4 +49,19 @@ public class MainUIController implements Initializable {
     stage.setScene(scene);
     stage.show();
     }
+        @FXML
+    public void HandleBtnMenuSala(ActionEvent event) throws IOException{
+        Node node = (Node) event.getSource();
+
+        Stage stage = (Stage) node.getScene().getWindow();
+        Parent root = null;
+    try {
+        root = FXMLLoader.load(getClass().getResource("/view/SalaUI.fxml"));
+    } catch (IOException ex) {
+        Logger.getLogger(SalaUIController.class.getName()).log(Level.SEVERE, null, ex);
+    }
+    Scene scene = new Scene(root);
+    stage.setScene(scene);
+    stage.show();
+    }
 }

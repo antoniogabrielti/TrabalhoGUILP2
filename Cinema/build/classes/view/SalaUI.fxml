@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.input.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controle.SalaUIController">
+   <children>
+      <ToolBar prefHeight="40.0" prefWidth="200.0">
+        <items>
+          <Button fx:id="MenuItemCadastroSala" depthTest="DISABLE" focusTraversable="false" mnemonicParsing="false" onAction="#HandleMenuItemCadastrar" text="Cadastrar" textAlignment="CENTER" />
+            <Button fx:id="MenuItemListaSala" focusTraversable="false" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#HandleMenuItemVisualizar" text="Visualizar" />
+            <Button fx:id="MenuItemDeletaSala" focusTraversable="false" layoutX="81.0" layoutY="10.0" mnemonicParsing="false" onAction="#HandleMenuItemDeletar" text="Deletar" />
+            <Button fx:id="MenuItemAtualizaSala" focusTraversable="false" layoutX="254.0" layoutY="10.0" mnemonicParsing="false" onAction="#HandleMenuItemAtualizar" text="Atualizar" />
+            <MenuButton focusTraversable="false" mnemonicParsing="false" text="Buscar Sala">
+              <items>
+                <MenuItem fx:id="MenuItemBuscaSalaNumero" mnemonicParsing="false" onAction="#HandleMenuItemBuscaPorNome" text="Por Numero" />
+                <MenuItem fx:id="MenuItemBuscaSalaCapacidade" mnemonicParsing="false" onAction="#HandleMenuItemBuscaPorCodigo" text="Por Capacidade" />
+              </items>
+            </MenuButton>
+        </items>
+      </ToolBar>
+      <AnchorPane fx:id="AnchorPaneSala" prefHeight="329.0" prefWidth="600.0" />
+      <Pane prefHeight="48.0" prefWidth="600.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#233a51" height="48.0" layoutX="-14.0" stroke="TRANSPARENT" strokeType="INSIDE" width="647.0" />
+            <Text layoutX="202.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Painel de Salas" wrappingWidth="196.0400390625">
+               <font>
+                  <Font name="Book Antiqua" size="27.0" />
+               </font>
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#e41616" />
+                        <Stop color="#ab3737" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Text>
+            <Button fx:id="BtnVoltarPrincipal" focusTraversable="false" layoutX="64.0" layoutY="9.0" mnemonicParsing="false" onAction="#HandleBtnVoltar" text="Voltar" />
+         </children>
+      </Pane>
+   </children>
+</VBox>

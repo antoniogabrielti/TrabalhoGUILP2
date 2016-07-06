@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPaneVisualizar" prefHeight="323.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controle.AnchorPaneVisualizarSalaController">
+   <children>
+      <TableView fx:id="tableViewSala" layoutX="173.0" layoutY="46.0" prefHeight="329.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="tableColumnNumeroSala" prefWidth="305.0" text="Número da Sala" />
+            <TableColumn fx:id="tableColumnCapacidadeSala" prefWidth="294.0" text="Capacidade / Lugares" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -23,7 +23,7 @@ class VendaUI {
     private VendaNegocio vendaNegocio;
     private SecaoNegocio secaoNegocio;
     private SecaoUI secoesCadastradas;
-    private FilmeUI filmesCadastrados;
+   // private FilmeUI filmesCadastrados;
     private FilmeNegocio filmeNegocio;
     private SalaUI salasCadastradas;
     private SalaNegocio salaNegocio;
@@ -32,7 +32,7 @@ class VendaUI {
         vendaNegocio = new VendaNegocio();
         secoesCadastradas = new SecaoUI();
         secaoNegocio = new SecaoNegocio();
-        filmesCadastrados = new FilmeUI();
+        //filmesCadastrados = new FilmeUI();
         filmeNegocio = new FilmeNegocio();
         salasCadastradas = new SalaUI();
         salaNegocio = new SalaNegocio();
@@ -153,7 +153,7 @@ class VendaUI {
 
     private void buscaVendaPorFilme() {
         System.out.println("######## Busca de Vendas por Filme ############");
-        filmesCadastrados.mostrarFilmes();
+       // filmesCadastrados.mostrarFilmes();
         int cod_filme = Console.scanInt("Informe o codigo do filme que deseja pesquisar as vendas:");
 
         try {

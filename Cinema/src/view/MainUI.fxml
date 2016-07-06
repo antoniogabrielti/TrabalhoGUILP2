@@ -21,7 +21,7 @@
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </Button>
-                  <Button fx:id="BtnMenuSala" focusTraversable="false" layoutX="218.0" layoutY="171.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="150.0" text="Menu de Salas">
+                  <Button fx:id="BtnMenuSala" focusTraversable="false" layoutX="218.0" layoutY="171.0" mnemonicParsing="false" onAction="#HandleBtnMenuSala" prefHeight="46.0" prefWidth="150.0" text="Menu de Salas">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>

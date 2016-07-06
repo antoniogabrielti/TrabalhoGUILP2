@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.media.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="323.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controle.AnchorPaneCadastrarSalaController">
+   <children>
+      <ImageView fitHeight="69.0" fitWidth="62.0" layoutX="100.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/juliano/Desktop/TrabalhoGUILP2/Cinema/pictures/1467773410_cinema-glasses.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="176.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro De Salas">
+         <font>
+            <Font name="Informal Roman" size="41.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="0.5857142857142856" endY="0.7761904761904763" startX="0.5857142857142857" startY="0.5142857142857145">
+               <stops>
+                  <Stop color="#a5ab32" />
+                  <Stop color="#e9ff5c" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Label layoutX="218.0" layoutY="116.0" text="Número: " textFill="#f80707">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="201.0" layoutY="178.0" text="Capacidade:" textFill="#f80707">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldNumeroSala" layoutX="275.0" layoutY="112.0" prefHeight="25.0" prefWidth="69.0" />
+      <TextField fx:id="textFieldCapacidadeSala" layoutX="275.0" layoutY="175.0" onKeyPressed="#handleKeyEnter" prefHeight="25.0" prefWidth="69.0" />
+      <Separator layoutX="21.0" layoutY="248.0" prefHeight="0.0" prefWidth="559.0" />
+      <Button fx:id="btnCadastrarSala" layoutX="235.0" layoutY="270.0" mnemonicParsing="false" onAction="#handleBtnCadastrarSala" text="Cadastrar Nova Sala" />
+      <ImageView fitHeight="130.0" fitWidth="118.0" layoutX="41.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/juliano/Desktop/TrabalhoGUILP2/Cinema/pictures/1467773887_movie-09.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="retangleMaior" arcHeight="5.0" arcWidth="5.0" fill="#57cf60" height="17.0" layoutX="353.0" layoutY="170.0" onMouseClicked="#handleClickMais" stroke="BLACK" strokeType="INSIDE" width="19.0" />
+      <Text fx:id="textMaior" layoutX="350.0" layoutY="185.0" onMouseClicked="#handleClickMais" strokeType="OUTSIDE" strokeWidth="0.0" text=" ▲" wrappingWidth="45.0">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Text>
+      <Rectangle fx:id="retangleMenor" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="17.0" layoutX="353.0" layoutY="191.0" onMouseClicked="#handleClickMenos" stroke="BLACK" strokeType="INSIDE" width="19.0" />
+      <Text fx:id="textMenor" layoutX="353.0" layoutY="207.0" onMouseClicked="#handleClickMenos" strokeType="OUTSIDE" strokeWidth="0.0" text="▼" wrappingWidth="62.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

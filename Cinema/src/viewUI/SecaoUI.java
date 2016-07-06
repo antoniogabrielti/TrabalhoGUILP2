@@ -20,14 +20,14 @@ import view.SecaoMenu;
 
 class SecaoUI {
     private SecaoNegocio secaoNegocio;
-    private FilmeUI filmesCadastrados;
+    //private FilmeUI filmesCadastrados;
     private FilmeNegocio filmeNegocio;
     private SalaUI salasCadastradas;
     private SalaNegocio salaNegocio;
 
     public SecaoUI() {
         secaoNegocio = new SecaoNegocio();
-        filmesCadastrados = new FilmeUI();
+       // filmesCadastrados = new FilmeUI();
         filmeNegocio = new FilmeNegocio();
         salasCadastradas = new SalaUI();
         salaNegocio = new SalaNegocio();
@@ -82,7 +82,7 @@ class SecaoUI {
                     System.out.println("Sala Invalida!!!");
                     return;
                 }else{
-                    filmesCadastrados.mostrarFilmes();
+                   // filmesCadastrados.mostrarFilmes();
                     int codigo = Console.scanInt("Informe o codigo do filme para a secao:");
                     Filme FilmeEscolhido = filmeNegocio.procurarFilmePorCod(codigo);
                     if(FilmeEscolhido==null){
@@ -142,7 +142,7 @@ class SecaoUI {
 
     private void buscaSecoesPorFilme() {
         System.out.println("######## Busca de Secoes por Filme ############");
-        filmesCadastrados.mostrarFilmes();
+      //  filmesCadastrados.mostrarFilmes();
         int cod_filme=Console.scanInt("Informe o codigo do filme que deseja pesquisar as secoes:");
        
         try {
@@ -307,7 +307,7 @@ class SecaoUI {
             }while(horario==null);
             Filme f =null;
             do{
-            this.filmesCadastrados.mostrarFilmes();
+            //this.filmesCadastrados.mostrarFilmes();
             Integer codFilme;
             
             String codstring = Console.scanString("codigo do filme: ");
