@@ -86,39 +86,39 @@ public class SalaUIController implements Initializable {
     }
     public void HandleMenuItemAtualizar(ActionEvent event) throws IOException{
         Stage stage = new Stage();
-        Parent root = FXMLLoader.load(Cinema.class.getResource("/view/AnchorPaneAtualizarFilme.fxml"));
+        Parent root = FXMLLoader.load(Cinema.class.getResource("/view/AnchorPaneAtualizarSala.fxml"));
         AnchorPaneSala.getChildren().setAll(root);
     }
     public void HandleMenuItemBuscaPorNome(ActionEvent event) throws IOException{
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(AnchorPaneBuscaNomeController.class.getResource("/view/AnchorPaneBuscaNome.fxml"));
+        loader.setLocation(AnchorPaneBuscaNumeroCapacidadeController.class.getResource("/view/AnchorPaneBuscaNumCapacidade.fxml"));
         Parent page = (Parent) loader.load();
 
         // Criando um Estágio de Diálogo (Stage Dialog)
         Stage dialogStage = new Stage();
-        dialogStage.setTitle("Excluir Filme");
+        dialogStage.setTitle("Buscar Sala");
         Scene scene = new Scene(page);
         dialogStage.setScene(scene);
 
         // Setando o cliente no Controller.
-        AnchorPaneBuscaNomeController controller = loader.getController();
-        controller.setToggleBtnNomeFilme();
+        AnchorPaneBuscaNumeroCapacidadeController controller = loader.getController();
+        controller.setToggleBtnNumeroSala();
         AnchorPaneSala.getChildren().setAll(page);
     }
         public void HandleMenuItemBuscaPorCodigo(ActionEvent event) throws IOException{
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(AnchorPaneBuscaNomeController.class.getResource("/view/AnchorPaneBuscaNome.fxml"));
+        loader.setLocation(AnchorPaneBuscaNumeroCapacidadeController.class.getResource("/view/AnchorPaneBuscaNumCapacidade.fxml"));
         Parent page = (Parent) loader.load();
 
         // Criando um Estágio de Diálogo (Stage Dialog)
         Stage dialogStage = new Stage();
-        dialogStage.setTitle("Excluir Filme");
+        dialogStage.setTitle("Buscar Sala");
         Scene scene = new Scene(page);
         dialogStage.setScene(scene);
 
         // Setando o cliente no Controller.
-        AnchorPaneBuscaNomeController controller = loader.getController();
-        controller.setToggleBtnCodigoFilme();
+        AnchorPaneBuscaNumeroCapacidadeController controller = loader.getController();
+        controller.setToggleBtnCapacidadeSala();
         AnchorPaneSala.getChildren().setAll(page);
     }
 }

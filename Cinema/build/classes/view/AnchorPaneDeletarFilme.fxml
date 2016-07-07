@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -29,9 +30,9 @@
                         <Font name="System Bold Italic" size="15.0" />
                      </font>
                   </Label>
-                  <Group layoutX="1.0" layoutY="28.0">
+                  <Group layoutX="-17.0" layoutY="33.0">
                      <children>
-                        <GridPane layoutX="31.0" layoutY="64.0">
+                        <GridPane layoutX="31.0" layoutY="64.0" prefHeight="90.0" prefWidth="240.0">
                           <columnConstraints>
                             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -57,9 +58,21 @@
                                     <Font size="14.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="LabelFilmeCod" GridPane.columnIndex="1" />
-                              <Label fx:id="LabelFilmeNome" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                              <Label fx:id="LabelFilmeGenero" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Label fx:id="LabelFilmeCod" GridPane.columnIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="-60.0" />
+                                 </GridPane.margin></Label>
+                              <Label fx:id="LabelFilmeNome" prefHeight="0.0" prefWidth="195.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="-75.0" top="2.0" />
+                                 </GridPane.margin>
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font></Label>
+                              <Label fx:id="LabelFilmeGenero" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <GridPane.margin>
+                                    <Insets left="-60.0" />
+                                 </GridPane.margin></Label>
                            </children>
                         </GridPane>
                      </children>

@@ -95,7 +95,7 @@ public class FilmeUIController implements Initializable {
 
         // Criando um Estágio de Diálogo (Stage Dialog)
         Stage dialogStage = new Stage();
-        dialogStage.setTitle("Excluir Filme");
+        dialogStage.setTitle("Buscar Filme");
         Scene scene = new Scene(page);
         dialogStage.setScene(scene);
 
@@ -111,7 +111,7 @@ public class FilmeUIController implements Initializable {
 
         // Criando um Estágio de Diálogo (Stage Dialog)
         Stage dialogStage = new Stage();
-        dialogStage.setTitle("Excluir Filme");
+        dialogStage.setTitle("Buscar Filme");
         Scene scene = new Scene(page);
         dialogStage.setScene(scene);
 

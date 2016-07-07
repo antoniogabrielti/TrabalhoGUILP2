@@ -4,6 +4,7 @@ package Controle;
 import dominio.Filme;
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
@@ -90,8 +91,16 @@ FilmeNegocio FN = new FilmeNegocio();
         public void HandleBtnAtualizarFilme(ActionEvent event) throws IOException{
         
         if (filmeSelecionadoAtualizar != null) {
+            
             if (!this.textFieldNomeFilme.getText().isEmpty() && !this.textFieldGeneroFilme.getText().isEmpty() && !this.textFieldSinopseFilme.getText().isEmpty()) {
-                
+                if(this.ValidarAtualizacaoRepetida(filmeSelecionadoAtualizar)){
+                Alert alertFilmeCadastrado = new Alert(Alert.AlertType.WARNING);
+                alertFilmeCadastrado.setTitle("Falha na Atualização");
+                alertFilmeCadastrado.setHeaderText("ATENÇÃO!!!");
+                alertFilmeCadastrado.setContentText("O filme "+textFieldNomeFilme.getText() +" já existe, não é permitido filmes duplicados!!!");
+                alertFilmeCadastrado.showAndWait();
+                return;
+            }
                 try {
                     if(!filmeSelecionadoAtualizar.getNome().equalsIgnoreCase(textFieldNomeFilme.getText())){
                         this.filmeSelecionadoAtualizar.setNome(textFieldNomeFilme.getText());
@@ -138,6 +147,22 @@ FilmeNegocio FN = new FilmeNegocio();
                 ActionEvent event = new ActionEvent();
                 this.HandleBtnAtualizarFilme(event);
             }
+        }
+        public boolean ValidarAtualizacaoRepetida(Filme filmeSelec){
+            List<Filme> TodosFilmes = FN.listar();
+            ArrayList<Filme> FilmesRestantes = new ArrayList<Filme>();
+            boolean valida=false;
+            for(Filme f : TodosFilmes){
+                if(!f.getNome().equalsIgnoreCase(filmeSelec.getNome())){
+                    FilmesRestantes.add(f);
+                }
+            }
+            for(Filme film : FilmesRestantes){
+                if(film.getNome().equalsIgnoreCase(this.textFieldNomeFilme.getText())){
+                    valida=true;
+                }
+            }
+            return valida;
         }
     
 }

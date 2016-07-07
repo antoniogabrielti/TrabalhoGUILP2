@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="323.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controle.AnchorPaneBuscaNumeroCapacidadeController">
+   <children>
+      <SplitPane dividerPositions="0.2398753894080997" layoutX="168.0" layoutY="74.0" orientation="VERTICAL" prefHeight="323.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Button fx:id="btnPesquisar" layoutX="463.0" layoutY="7.0" mnemonicParsing="false" onAction="#HandlebtnPesquisar" text="Pesquisar" />
+                  <Label layoutX="39.0" layoutY="11.0" prefHeight="17.0" prefWidth="313.0" text=" Informe o número ou capacidade para buscar uma sala: " />
+                  <TextField fx:id="textFieldBuscaSala" layoutX="352.0" layoutY="7.0" onKeyPressed="#handleKeyEnter" prefHeight="25.0" prefWidth="78.0" />
+                  <ToggleButton fx:id="toggleBtnNumeroSala" layoutX="136.0" layoutY="37.0" mnemonicParsing="false" onAction="#HandlebtnToggleButtonNumeroSala" text="Buscar Por Número" />
+                  <ToggleButton fx:id="toggleBtnCapacidadeSala" layoutX="313.0" layoutY="37.0" mnemonicParsing="false" onAction="#HandlebtnToggleButtonCapacidadeSala" text="Buscar Por Capacidade" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TableView fx:id="tableViewSala" layoutX="121.0" layoutY="47.0" prefHeight="277.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="tableColumnNumeroSala" prefWidth="299.0" text="Número da Sala" />
+                        <TableColumn fx:id="tableColumnCapacidadeSala" prefWidth="298.0" text="Capacidade / Lugares" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
